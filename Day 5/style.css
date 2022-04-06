@@ -1,0 +1,54 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #4cae53, #3d8880);
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.search-box {
+    width: 70px;
+    height: 70px;
+    background-color: #242628;
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.search-box__input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    padding: 0 100px 0 20px;
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.search-box__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    border: none;
+    outline: none;
+    font-size: 30px;
+}
+
+.w-400 {
+    width: 400px;
+}

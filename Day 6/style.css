@@ -1,0 +1,93 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+:root {
+    --primary-color: #17a2b8;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.press {
+    border-radius: 10px;
+    padding: 20px 50px;
+    font-size: 40px;
+    background-color: #fff;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.box_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.key__box {
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+}
+
+.keyboard {
+    width: 250px;
+    height: 250px;
+    border: 7px solid #fff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+
+.key__box--key, 
+.key__box--location, 
+.key__box--which,
+.key__box--code {
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+
+.key__box--key div, 
+.key__box--location div, 
+.key__box--which div, 
+.key__box--code div {
+    background-color: #78c0c9;
+    line-height:50px;
+    color: white;
+}
+
+.key__box--key div:last-child,
+.key__box--location div:last-child,
+.key__box--which div:last-child,
+.key__box--code div:last-child{
+    width: 100%;
+    line-height: 50px;
+    background-color: #fff;
+    color: black;
+}
+
+.hide {
+    display: none;
+}

@@ -1,0 +1,74 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #82c044;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+body {
+    height: 100vh;
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.wrapper h2 {
+    margin-bottom: 10px;
+}
+
+.wrapper__box {
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper__box li {
+    list-style: none;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.wrapper__box li i {
+    font-size: 10px; 
+    cursor: pointer;   
+}
+
+.wrapper__box input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+}
+
+.btn__remove {
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,104 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --success-color: #3498db;
+    --error-color: #e85748;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+body{
+    background: linear-gradient(to right, #449ee6, #8f4d9b);
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-box {
+    width: 400px;
+    background-color: #fff;
+    padding: 30px 50px;
+    border-radius: 10px;
+}
+
+.register-box h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.input-control {
+    margin-top: 40px;
+    position: relative;
+}
+
+.input-control input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #adadad;
+    font-size: 16px;
+}
+
+.input-control span {
+    position: absolute;
+    border-bottom: 3px solid var(--success-color);
+    width: 0;
+    left: 0;
+    top: 37px;
+    transition:0.3s;
+}
+
+.input-control input:focus ~ span {
+    width: 100%;
+}
+
+.input-control.error {
+    color: var(--error-color);
+}
+
+.input-control.error input {
+    border-bottom: 3px solid var(--error-color);
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: var(--success-color);
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    padding: 15px 0;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-submit:hover {
+    background-color: #08609a;
+}
+
+.signup {
+    color: #666;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup a {
+    color: var(--success-color);
+    text-decoration: none;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}

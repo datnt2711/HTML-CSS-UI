@@ -1,0 +1,82 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --active-color: #c23564;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    width: 720px;
+    position: relative;
+}
+
+.tab-item {
+    min-width: 80px;
+    padding: 16px 20px 11px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--active-color);
+    border-bottom: 5px solid transparent;
+    opacity: 0.6;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.tab-item:hover {
+    color: var(--active-color);
+    opacity: 1;
+    background-color: rgb(252, 239, 243);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 5px solid rgb(252, 228, 235)
+}
+
+.tab-item.active {
+    opacity: 1;
+}
+
+.contents {
+    width: 720px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content h2 {
+    margin: 20px 0;
+}
+
+.tab-content p {
+    font-size: 18px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    background-color: var(--active-color);
+    border-radius: 15px;
+    transition: all 0.5s ease;  
+}

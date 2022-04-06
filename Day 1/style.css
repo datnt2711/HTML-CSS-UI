@@ -1,0 +1,145 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+:root {
+    --primary-color: #4d9e56;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #44a44d, #387e76);
+}
+
+.card {
+    width: 320px;
+    height: 400px;
+    background-color: #252737;
+    border-radius: 15px;
+    margin: 120px auto;
+    position: relative;
+    padding: 20px;
+}
+
+.card__heart, .card__cart {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: white;
+    font-size: 15px;
+}
+
+.card__cart {
+    left: unset;
+    right: 15px;
+}
+
+.card__image {
+    width: 70%;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+
+.card__image img {
+    width: 100%;
+    object-fit: cover;
+}   
+
+.card__title, .card__price {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+.card__title {
+    color: var(--primary-color);
+}
+
+.card__size, .card__color {
+    display: flex;
+    color: white;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card__size span {
+    background-color: #d5d5d5;
+    color: black;
+    padding: 2px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.card__color span{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.card__color--green {
+    background-color: green;
+}
+
+.card__color--red {
+    background-color: red;
+}
+
+.card__color--black {
+    background-color: black;
+}
+
+.card__btn button {
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    margin-right: 5px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.card__btn button:hover {
+    padding: 8px 18px;
+}
+
+.card:hover .card__image {
+    transform: rotate(-20deg) translateY(-70px);
+}
+
+.card:hover .card__title {
+    transform: translate(-40px, -60px);
+    font-size: 25px;
+}
+
+.card:hover .card__price {
+    transform: translate(-120px, -60px);
+    font-size: 25px;
+}
+
+.card__dis {
+    margin-top: 150px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.card:hover .card__dis {
+    margin-top: -20px;
+    opacity: 1;
+}
+
+.card__heart, .card__cart, .card__image, .card__size span, .card__color span, .card__btn button {
+    cursor: pointer;
+}
